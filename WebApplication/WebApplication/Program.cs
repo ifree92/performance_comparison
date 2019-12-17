@@ -13,6 +13,7 @@ namespace WebApplication
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Dotnet version: " + Environment.Version);
             CreateHostBuilder(args).Build().Run();
         }
 
