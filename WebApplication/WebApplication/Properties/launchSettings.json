@@ -4,9 +4,9 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://*:9686",
+      "applicationUrl": "http://0.0.0.0:9686",
       "sslPort": 0,
-      "Port": 5555
+      "Port": 5000
     }
   },
   "profiles": {
@@ -16,7 +16,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://*:5555"
+      "applicationUrl": "http://0.0.0.0:5000"
     },
     "IIS Express": {
       "commandName": "IISExpress",

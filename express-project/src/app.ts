@@ -5,7 +5,7 @@ const app = express();
 
 async function main() {
   app.use('/', appRouter);
-  app.listen(5555, () => console.log('Listening 5555'));
+  app.listen(7777, () => console.log('Listening 7777'));
 }
 
 main().catch(console.error);

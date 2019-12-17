@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication.DTO;
 using WebApplication.Services;
@@ -14,7 +14,7 @@ namespace WebApplication.Controllers
 
         public RootController(UsersService usersService)
         {
-            this._usersService = usersService;
+            _usersService = usersService;
         }
 
         [HttpGet("")]
@@ -40,6 +40,12 @@ namespace WebApplication.Controllers
         public List<UserDTO> GetJsonArray()
         {
             return _usersService.GetUsers();
+        }
+
+        [HttpGet("json-array-task")]
+        public Task<List<UserDTO>> GetJsonArrayTask()
+        {
+            return _usersService.GetUsersTask();
         }
     }
 }

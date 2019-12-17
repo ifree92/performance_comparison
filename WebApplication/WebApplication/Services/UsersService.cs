@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using WebApplication.DTO;
 
 namespace WebApplication.Services
@@ -39,6 +39,11 @@ namespace WebApplication.Services
         public List<UserDTO> GetUsers()
         {
             return _users;
+        }
+
+        public Task<List<UserDTO>> GetUsersTask()
+        {
+            return Task.FromResult(this._users);
         }
     }
 }
