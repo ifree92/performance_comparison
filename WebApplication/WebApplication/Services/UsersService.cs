@@ -43,7 +43,7 @@ namespace WebApplication.Services
 
         public Task<List<UserDTO>> GetUsersTask()
         {
-            return Task.FromResult(this._users);
+            return Task.FromResult(_users);
         }
     }
 }
